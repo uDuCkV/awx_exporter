@@ -21,7 +21,7 @@ class Exporter(object):
         parsed_args = pre_parsed_args
 
         # set config variables
-        self.Host = str(parsed_args.Host).rstrip('/') + '/'  # make sure it has exactly 1 forward slash at the end
+        self.Host = str(parsed_args.Host).rstrip('/') # + '/'  # make sure it has exactly 1 forward slash at the end
         self.TOKEN = parsed_args.TOKEN
         self.VERIFY_SSL = parsed_args.VERIFY_SSL
 
